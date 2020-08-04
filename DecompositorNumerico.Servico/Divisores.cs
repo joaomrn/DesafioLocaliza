@@ -6,6 +6,11 @@ namespace DecompositorNumerico.Servico
 {
     public class Divisores
     {
+        /// <summary>
+        /// Realiza as operações para obter os divisores e os numeros primos
+        /// </summary>
+        /// <param name="valor">Valor informado pelo usuário</param>
+        /// <returns></returns>
         public Divisor Calcular(int valor)
         {
             double baseValor = valor;
@@ -15,24 +20,18 @@ namespace DecompositorNumerico.Servico
 
             for (int i = 1; i <= valor; i++)
             {
-                try
-                {
-                    double a = baseValor / i;
-                    if (Int32.TryParse(a.ToString(), out int inteiro))
-                        divisores.Add(i);
-                }
-                catch (Exception ex)
-                {
+                //verifica se o resultado da divisão é um inteiro, se for o numero é um divisor
+                double a = baseValor / i;
+                if (Int32.TryParse(a.ToString(), out int inteiro))
+                    divisores.Add(i);
 
-                    continue;
-                }
             }
 
             foreach (var item in divisores)
             {
-                if (item < 2)
+                if (item < 2)//1 não é considerado número primo
                     continue;
-                else if (item == 2)
+                else if (item == 2)//2 é um número primo
                 {
                     divisoresPrimos.Add(item);
                     continue;
@@ -46,6 +45,8 @@ namespace DecompositorNumerico.Servico
                         cont++;
                 }
 
+                //Número primo é dividido por 1 e por ele mesmo
+                //Se cont for igual a 2 o numero é primo
                 if (cont == 2)
                     divisoresPrimos.Add(item);
 
