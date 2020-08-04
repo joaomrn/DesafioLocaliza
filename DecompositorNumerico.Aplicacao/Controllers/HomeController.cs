@@ -43,6 +43,10 @@ namespace DecompositorNumerico.Aplicacao.Controllers
             {
                 TempData["ValorInvalido"] = $@" Numero invalido!";
                 return View("Index");
+            }else if (valor > 100000000)
+            {
+                TempData["ValorInvalido"] = $@" Numero muito grande!";
+                return View("Index");
             }
 
             var client = new RestClient("https://localhost:44312/api/");
