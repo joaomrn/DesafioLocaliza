@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecompositorNumerico.API", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{AAA1A682-5FFC-4125-BFED-6EA74918DE79}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aplicação", "Aplicação", "{863FC16B-80F7-4B44-9733-F1A429E1BFD8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aplicacao", "Aplicacao", "{863FC16B-80F7-4B44-9733-F1A429E1BFD8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serviço", "Serviço", "{7A36ED76-CF79-439A-B3B3-09278037CE42}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Servico", "Servico", "{7A36ED76-CF79-439A-B3B3-09278037CE42}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecompositorNumerico.Servico", "DecompositorNumerico.Servico\DecompositorNumerico.Servico.csproj", "{A9D57694-D120-4762-8154-048D277BC5E8}"
 EndProject
@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{F716
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teste", "Teste", "{9C82CB4A-ABED-4D33-BE7A-46DE9A4B9A29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecompositorNumerico.Teste", "DecompositorNumerico.Teste\DecompositorNumerico.Teste.csproj", "{4D26DACB-F958-4938-B267-D01DBB6DBBC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecompositorNumerico.Teste", "DecompositorNumerico.Teste\DecompositorNumerico.Teste.csproj", "{4D26DACB-F958-4938-B267-D01DBB6DBBC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
