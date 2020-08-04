@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.Swagger;
 
 namespace DecompositorNumerico.API
 {
@@ -26,6 +28,23 @@ namespace DecompositorNumerico.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerGen(c => {
+
+                c.SwaggerDoc("v1",
+                    new OpenApiInfo
+                    {
+                        Title = "Decompositor Númerico",
+                        Version = "v1",
+                        Description = "Desafio para o processo seletivo da Localiza",
+                        Contact = new OpenApiContact
+                        {
+                            Name = "João Magalhães",
+                            Url = new Uri("https://github.com/joaomrn"),
+                            Email = "joaovitormrn@gmail.com"
+                        }
+                    });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +54,12 @@ namespace DecompositorNumerico.API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            // Ativando middlewares para uso do Swagger
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Decompositor Númerico V1");
+            });
 
             app.UseHttpsRedirection();
 
