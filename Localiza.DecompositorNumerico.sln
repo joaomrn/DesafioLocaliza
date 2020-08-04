@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecompositorNumerico.Dominio", "DecompositorNumerico.Dominio\DecompositorNumerico.Dominio.csproj", "{9FD3C5C1-A970-41F8-9F14-6691F30F6200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecompositorNumerico.Aplicacao", "DecompositorNumerico.Aplicacao\DecompositorNumerico.Aplicacao.csproj", "{405C65C0-668D-43E4-BF84-01B1F462298A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecompositorNumerico.API", "DecompositorNumerico.API\DecompositorNumerico.API.csproj", "{DE95BBA4-4F99-4817-A31D-0715A5357837}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{AAA1A682-5FFC-4125-BFED-6EA74918DE79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aplicação", "Aplicação", "{863FC16B-80F7-4B44-9733-F1A429E1BFD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serviço", "Serviço", "{7A36ED76-CF79-439A-B3B3-09278037CE42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecompositorNumerico.Servico", "DecompositorNumerico.Servico\DecompositorNumerico.Servico.csproj", "{A9D57694-D120-4762-8154-048D277BC5E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dominio", "Dominio", "{F716EF59-D78C-4AA5-8DE8-797000929D25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FD3C5C1-A970-41F8-9F14-6691F30F6200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD3C5C1-A970-41F8-9F14-6691F30F6200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD3C5C1-A970-41F8-9F14-6691F30F6200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD3C5C1-A970-41F8-9F14-6691F30F6200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{405C65C0-668D-43E4-BF84-01B1F462298A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{405C65C0-668D-43E4-BF84-01B1F462298A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{405C65C0-668D-43E4-BF84-01B1F462298A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{405C65C0-668D-43E4-BF84-01B1F462298A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE95BBA4-4F99-4817-A31D-0715A5357837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE95BBA4-4F99-4817-A31D-0715A5357837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE95BBA4-4F99-4817-A31D-0715A5357837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE95BBA4-4F99-4817-A31D-0715A5357837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D57694-D120-4762-8154-048D277BC5E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D57694-D120-4762-8154-048D277BC5E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D57694-D120-4762-8154-048D277BC5E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D57694-D120-4762-8154-048D277BC5E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9FD3C5C1-A970-41F8-9F14-6691F30F6200} = {F716EF59-D78C-4AA5-8DE8-797000929D25}
+		{405C65C0-668D-43E4-BF84-01B1F462298A} = {863FC16B-80F7-4B44-9733-F1A429E1BFD8}
+		{DE95BBA4-4F99-4817-A31D-0715A5357837} = {AAA1A682-5FFC-4125-BFED-6EA74918DE79}
+		{A9D57694-D120-4762-8154-048D277BC5E8} = {7A36ED76-CF79-439A-B3B3-09278037CE42}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E612046-58CB-4BE5-A2DC-CB630CE62512}
+	EndGlobalSection
+EndGlobal
